@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Red+Hat+Display:wght@600&family=Source+Code+Pro:wght@400&display=swap");
+@import "tailwindcss";
+
+@theme {
+
+  --color-background: #0b0d10;
+  --color-on-background: #f0f2f5;
+  --color-surface: #111419;
+  --color-on-surface: #f0f2f5;
+  --color-surface-container-low: #0e1015;
+  --color-surface-container: #161920;
+  --color-surface-container-high: #1c2029;
+  --color-on-surface-variant: #8e95a2;
+  --color-outline: #2b313d;
+  --color-outline-variant: #1e222a;
+  --color-primary: #5b67ca;
+  --color-on-primary: #ffffff;
+  --color-primary-hover: #6b77d6;
+  --color-primary-container: #21264d;
+  --color-on-primary-container: #c7cdff;
+  --color-secondary: #262b36;
+  --color-on-secondary: #e2e5eb;
+  --color-accent-favorite: #e5b54f;
+  --color-error: #d94b4b;
+  --color-on-error: #121212;
+  --color-error-container: #3b181a;
+  --color-on-error-container: #f5a3a3;
+  --color-scrim: #050608;
+
+
+  --font-display: "Red Hat Display", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Instrument Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "Source Code Pro", ui-monospace, SFMono-Regular, monospace;
+
+}
+
+
