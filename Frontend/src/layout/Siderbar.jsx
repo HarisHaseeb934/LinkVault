@@ -32,13 +32,13 @@ const Siderbar = () => {
                   {icon}
                   {label}
                 </span>
-                <span>42</span>
+                <span className="font-mono text-xs text-on-background/50">42</span>
               </li>
             );
           })}
         </ul>
-        <p className="text-on-background/70 p-2 text-[13px]">TAGS</p>
-        <ul className="flex flex-wrap lg:flex-col">
+        <p className="text-on-background/70 p-1.5 text-[13px]">TAGS</p>
+        <ul className="flex flex-wrap lg:flex-col mb-4">
           {TAGS.map((tag, index) => {
             return (
               <li
@@ -46,22 +46,22 @@ const Siderbar = () => {
                 className="text-[12px] flex justify-between hover:bg-surface-container text-on-background/70 hover:text-on-background p-2 rounded-sm"
               >
                 <span>#{tag}</span>
-                <span>42</span>
+                <span className="font-mono text-xs text-on-background/50">42</span>
               </li>
             );
           })}
         </ul>
       </div>
 
-      <div className="text-[13px] border-t border-outline-variant">
+      <div className="text-[13px] border-t border-outline-variant py-2">
           <div className="flex p-2">
-            <img src="" alt="" />
+            <img src="fix" alt="" />
             <div className="flex flex-col text">
               <span className="text-on-background">Name</span>
               <span className="text-on-background/70">Email</span>
             </div>
           </div>
-          <NavLink className={`flex gap-2 items-center hover:bg-surface-container text-on-background/70 hover:text-on-background p-2 rounded-sm`}>
+          <NavLink className={`flex gap-2 items-center hover:bg-surface-container text-on-background/70 hover:text-on-background p-1.5 rounded-sm`}>
           <MdOutlineSettings className="text-lg"/>
           Settings
           </NavLink>
