@@ -39,7 +39,7 @@ const Card = () => {
 
       <div className="font-display flex flex-wrap gap-1">
             {TAGS.map((tag, index) => {
-                return <span className="text-on-background/50 hover:text-on-background text-xs bg-surface-container-high p-0.5 px-3 border border-outline rounded-2xl ">#{tag}</span>
+                return <span key={index} className="text-on-background/50 hover:text-on-background text-xs bg-surface-container-high p-0.5 px-3 border border-outline rounded-2xl ">#{tag}</span>
             })}
       </div>
     </div>

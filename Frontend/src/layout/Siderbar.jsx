@@ -61,7 +61,7 @@ const Siderbar = () => {
               <span className="text-on-background/70">Email</span>
             </div>
           </div>
-          <NavLink className={`flex gap-2 items-center hover:bg-surface-container text-on-background/70 hover:text-on-background p-1.5 rounded-sm`}>
+          <NavLink to={'/settings'} className={`flex gap-2 items-center hover:bg-surface-container text-on-background/70 hover:text-on-background p-1.5 rounded-sm`}>
           <MdOutlineSettings className="text-lg"/>
           Settings
           </NavLink>

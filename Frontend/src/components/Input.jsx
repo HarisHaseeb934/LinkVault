@@ -1,10 +1,10 @@
-const Input = ({label, name, type, placeholder}) => {
+const Input = ({ label, name, type, placeholder, classname, div, labelClass}) => {
   return (
-    <div>
-        {label && <label htmlFor={name}>{label}</label>}
-        <input type={type} placeholder={placeholder} name={name} id={name}/>
+    <div className={div}>
+      <label htmlFor={name} className={labelClass}>{label}</label>
+      <input type={type} placeholder={placeholder} name={name} id={name} className={classname}/>
     </div>
-  )
-}
+  );
+};
 
-export default Input
+export default Input;
