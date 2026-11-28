@@ -45,7 +45,7 @@ const ProfileInformation = () => {
         name={"fullName"}
       />
       <div className="flex justify-end">
-        <FormButton text={'Save Profile'}/>
+        <FormButton type={'submit'} text={'Save Profile'}/>
       </div>
     </form>
   );

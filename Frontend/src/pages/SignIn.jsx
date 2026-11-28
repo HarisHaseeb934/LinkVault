@@ -47,7 +47,7 @@ const SignIn = () => {
           </div>
           Remember Me
         </label>
-        <FormButton text={"Sign In"} />
+        <FormButton type={'submit'} text={"Sign In"} />
       </form>
       <p className="text-sm text-on-background/60">
         New to LinkVault?{" "}

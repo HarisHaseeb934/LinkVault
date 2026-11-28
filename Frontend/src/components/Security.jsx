@@ -31,7 +31,7 @@ const Security = () => {
           name={"confirmPassword"}
         />
         <div className="flex justify-end">
-          <FormButton text={'Update Password'}/>
+          <FormButton type={'submit'} text={'Update Password'}/>
         </div>
       </form>
       <div className="text-xs sm:text-sm text-on-background/50 flex flex-col sm:flex-row justify-between gap-2">

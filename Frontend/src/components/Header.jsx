@@ -27,7 +27,7 @@ const Header = ({handleModalOpen}) => {
               })}
             </select>
           </div>
-          <button onClick={handleModalOpen} className="font-display flex text-on-background items-center gap-2 bg-primary py-1.5 px-3 rounded-sm text-sm">
+          <button onClick={handleModalOpen} className="font-display flex text-on-background items-center gap-2 cursor-pointer bg-primary py-1.5 px-3 rounded-sm text-sm">
             <RiAddLargeLine className="text-on-background" />
             Add Link
           </button>

@@ -30,7 +30,7 @@ const Signup = () => {
           placeholder={`Re-enter new password`}
           name={"confirmPassword"}
         />
-        <FormButton text={"Sign Up"} />
+        <FormButton type={'submit'} text={"Sign Up"} />
       </form>
       <p className="text-sm text-on-background/60">
         Already have an account?{" "}

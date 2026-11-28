@@ -3,7 +3,6 @@ import Card from "../components/Card";
 import Dialog from "../components/Dialog";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
-import { NavLink } from "react-router-dom";
 
 const Dashboard = () => {
   const dialogModal = useRef(null);
@@ -18,11 +17,7 @@ const Dashboard = () => {
 
   return (
     <main className="bg-background w-full divide-y divide-outline-variant flex flex-col">
-      <NavLink
-        to={"/dashboard"}
-      >
-        <Header handleModalOpen={handleModalOpen} />
-      </NavLink>
+      <Header handleModalOpen={handleModalOpen} />
       <div className="p-5 flex-1">
         <div className="font-display flex justify-between items-baseline">
           <h2 className="text-on-background text-lg">All Links</h2>

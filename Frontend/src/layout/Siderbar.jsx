@@ -15,7 +15,9 @@ const Siderbar = () => {
   return (
     <aside className="lg:w-60 bg-surface-container-low p-4 lg:min-h-screen flex flex-col justify-between">
       <div className="">
-        <Logo fontSize={'text-lg'} imageSize={'w-10'}/>
+        <NavLink to={'/dashboard'}>
+          <Logo fontSize={"text-lg"} imageSize={"w-10"} />
+        </NavLink>
         <ul className="font-display flex flex-col gap-2 py-4">
           {SIDEBAR_TABS.map((tab, index) => {
             const { label, icon } = tab;
@@ -28,7 +30,9 @@ const Siderbar = () => {
                   {icon}
                   {label}
                 </span>
-                <span className="font-mono text-xs text-on-background/50">42</span>
+                <span className="font-mono text-xs text-on-background/50">
+                  42
+                </span>
               </li>
             );
           })}
@@ -42,7 +46,9 @@ const Siderbar = () => {
                 className="text-[12px] flex justify-between hover:bg-surface-container text-on-background/70 hover:text-on-background p-2 rounded-sm"
               >
                 <span>#{tag}</span>
-                <span className="font-mono text-xs text-on-background/50">42</span>
+                <span className="font-mono text-xs text-on-background/50">
+                  42
+                </span>
               </li>
             );
           })}
@@ -50,17 +56,20 @@ const Siderbar = () => {
       </div>
 
       <div className="text-[13px] border-t border-outline-variant py-2">
-          <div className="flex p-2">
-            <img src="fix" alt="" />
-            <div className="flex flex-col text">
-              <span className="text-on-background">Name</span>
-              <span className="text-on-background/70">Email</span>
-            </div>
+        <div className="flex p-2">
+          <img src="fix" alt="" />
+          <div className="flex flex-col text">
+            <span className="text-on-background">Name</span>
+            <span className="text-on-background/70">Email</span>
           </div>
-          <NavLink to={'/settings'} className={`flex gap-2 items-center hover:bg-surface-container text-on-background/70 hover:text-on-background p-1.5 rounded-sm`}>
-          <MdOutlineSettings className="text-lg"/>
+        </div>
+        <NavLink
+          to={"/settings"}
+          className={`flex gap-2 items-center hover:bg-surface-container text-on-background/70 hover:text-on-background p-1.5 rounded-sm`}
+        >
+          <MdOutlineSettings className="text-lg" />
           Settings
-          </NavLink>
+        </NavLink>
       </div>
     </aside>
   );

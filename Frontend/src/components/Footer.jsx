@@ -1,7 +1,5 @@
 import Pagination from "./Pagination"
 
-
-
 const Footer = () => {
   return (
     <div className="flex flex-col sm:flex-row p-5 sm:items-center sm:justify-between gap-3">
