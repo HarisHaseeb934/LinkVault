@@ -2,6 +2,7 @@ import { MdOutlineClose } from "react-icons/md";
 import { useState } from "react";
 import { FaStar } from "react-icons/fa";
 import Input from "./Input";
+import FormButton from "./FormButton";
 
 const Dialog = ({ dialogModal, handleModalClose }) => {
   const [inputTag, setInputTag] = useState("");
@@ -34,7 +35,7 @@ const Dialog = ({ dialogModal, handleModalClose }) => {
           <h1 className="font-bold text-lg">Save New Resources</h1>
           <button
             type="button"
-            className="p-1 hover:bg-surface-container-high"
+            className="p-1 hover:bg-surface-container-high cursor-pointer"
             onClick={handleModalClose}
           >
             <MdOutlineClose className="text-on-background/70" />
@@ -46,18 +47,11 @@ const Dialog = ({ dialogModal, handleModalClose }) => {
             name={"url"}
             type={"url"}
             placeholder={"www.google.com"}
-            classname={`bg-surface-container-low w-full outline-none placeholder:text-on-surface/50 font-display p-2 text-on-surface font-normal text-sm focus:border-primary border rounded-sm border-outline-variant`}
-            div={`flex flex-col`}
-            labelClass={"text-on-surface text-sm"}
           />
           <Input
             label={"Title"}
             name={"title"}
-            type={"text"}
             placeholder={"Resource title"}
-            classname={`bg-surface-container-low w-full outline-none placeholder:text-on-surface/50 font-display p-2 text-on-surface font-normal text-sm focus:border-primary border rounded-sm border-outline-variant`}
-            div={`flex flex-col`}
-            labelClass={"text-on-surface text-sm"}
           />
 
           <div className="flex flex-col">
@@ -112,7 +106,7 @@ const Dialog = ({ dialogModal, handleModalClose }) => {
               Marks as Favorite
             </span>
             <button
-              className={`w-10 border relative flex items-center transition-all duration-200 border-outline rounded-2xl ${favorite ? "bg-primary" : "bg-surface-container-high"}`}
+              className={`w-10 border relative flex items-center transition-all duration-200 border-outline rounded-2xl cursor-pointer ${favorite ? "bg-primary" : "bg-surface-container-high"}`}
               type="button"
               onClick={handleFavorite}
             >
@@ -123,12 +117,10 @@ const Dialog = ({ dialogModal, handleModalClose }) => {
           </div>
         </div>
         <div className="flex justify-end bg-surface-container-low text-sm text-on-background gap-3 p-5">
-          <button className="bg-surface-container-high border border-outline-variant px-3.5 py-2 rounded-lg">
+          <button className="bg-surface-container-high border border-outline-variant px-3.5 py-2 rounded-lg cursor-pointer">
             Cancel
           </button>
-          <button className="bg-primary text-on-background border border-outline-variant px-3.5 py-2 rounded-lg">
-            Save Link
-          </button>
+          <FormButton text={"Save Link"} />
         </div>
       </form>
     </dialog>

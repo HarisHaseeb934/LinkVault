@@ -3,22 +3,26 @@ import Card from "../components/Card";
 import Dialog from "../components/Dialog";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
+import { NavLink } from "react-router-dom";
 
 const Dashboard = () => {
-
-  const dialogModal = useRef(null)
+  const dialogModal = useRef(null);
 
   const handleModalOpen = () => {
-    dialogModal.current.showModal()
-  }
+    dialogModal.current.showModal();
+  };
 
   const handleModalClose = () => {
-    dialogModal.current.close()
-  }
+    dialogModal.current.close();
+  };
 
   return (
     <main className="bg-background w-full divide-y divide-outline-variant flex flex-col">
-      <Header handleModalOpen = {handleModalOpen}/>
+      <NavLink
+        to={"/dashboard"}
+      >
+        <Header handleModalOpen={handleModalOpen} />
+      </NavLink>
       <div className="p-5 flex-1">
         <div className="font-display flex justify-between items-baseline">
           <h2 className="text-on-background text-lg">All Links</h2>
@@ -34,7 +38,7 @@ const Dashboard = () => {
         </div>
       </div>
 
-      <Dialog dialogModal = {dialogModal} handleModalClose = {handleModalClose}/>
+      <Dialog dialogModal={dialogModal} handleModalClose={handleModalClose} />
 
       <Footer />
     </main>

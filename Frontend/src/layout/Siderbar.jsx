@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 import { FaRegBookmark, FaTag, FaRegStar } from "react-icons/fa";
 import { MdOutlineSettings } from "react-icons/md";
+import Logo from "../components/Logo";
 
 const SIDEBAR_TABS = [
   { label: "All Links", icon: <FaRegBookmark /> },
@@ -14,12 +15,7 @@ const Siderbar = () => {
   return (
     <aside className="lg:w-60 bg-surface-container-low p-4 lg:min-h-screen flex flex-col justify-between">
       <div className="">
-        <h1 className="font-display text-on-background">
-          <NavLink className={`flex items-center font-semibold text-lg gap-1`}>
-            <img src="linkvault_logo.jpeg" alt="" className="w-10" />
-            LinkVault
-          </NavLink>
-        </h1>
+        <Logo fontSize={'text-lg'} imageSize={'w-10'}/>
         <ul className="font-display flex flex-col gap-2 py-4">
           {SIDEBAR_TABS.map((tab, index) => {
             const { label, icon } = tab;
